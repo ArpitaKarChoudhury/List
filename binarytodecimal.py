@@ -1,8 +1,10 @@
-a=[1,5,5]
-b=0
-d=" "
-while b<len(a):
-    c=str(a[b])
-    d=d+c
-    b=b+1
+a=[1,0,0,1,1]
+b=a[::-1]
+i=0
+d=0
+while i<len(b):
+    if b[i] ==1:
+        c=b[i]*2**i
+        d=c+d
+    i=i+1
 print(d)
